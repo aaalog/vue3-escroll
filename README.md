@@ -17,4 +17,4 @@ vue3 scroll 在 vue 中的使用
 </script>
 ```
 
-其中，wangEditor 相关的代码可参考 `src/App.js` 或 `src/App.vue`
+其中，相关的代码可参考 `src/App.vue`
