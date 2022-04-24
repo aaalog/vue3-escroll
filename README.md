@@ -78,7 +78,6 @@ vue3 scroll 在 vue 中的使用
 说明：  滚动条尺寸，接受传值 “mini” “none” “small” 以及 “medium”
 
 
----
 
 ##  事件
 
@@ -99,7 +98,6 @@ vue3 scroll 在 vue 中的使用
 事件：滚动到顶部
 
 
----
 
 ## 方法
 
@@ -120,7 +118,6 @@ $refs.escroll.scrollDown()
 
 ```
 
----
 
 ## 锚点
 
