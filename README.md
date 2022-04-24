@@ -74,7 +74,9 @@ vue3 scroll 在 vue 中的使用
 
 ### size
 类型：  String
+
 默认值：mini
+
 说明：  滚动条尺寸，接受传值 “mini” “none” “small” 以及 “medium”
 
 
