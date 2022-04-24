@@ -2,8 +2,8 @@
     <div class="escroll escroll-container" ref="escroll" :class="className">
         <slot />
     </div>
-    <div class="escroll-gotop-container" v-if="options.isGoTop && isGoTop" @click.stop="scrollUp">
-        <slot name="gotop"><button index="-1" class="totop" tips="TOP" />{{options.scrollTop}}</slot>
+    <div class="escroll-gotop-container" v-if="isGoTop" @click.stop="scrollUp">
+        <slot name="gotop"><button index="-1" class="totop" tips="TOP" /></slot>
     </div>
 </template>
 
@@ -26,7 +26,7 @@
             top: { type: [Number], default: 0 },
         },
         computed: {
-            isGoTop() { return this.options.scrollTop > this.top },
+            isGoTop() { return this.options.scrollTop > this.top && this.options.isGoTop },
             className() {
                 let rows = []
                 ;(this.vertical || this.vertical === undefined) && rows.push('escroll--direction--vertical')
