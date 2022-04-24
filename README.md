@@ -30,6 +30,9 @@ vue3 scroll 在 vue 中的使用
 
 说明：  如果只是简单使用滚动，不监听滚动中的任何事件，那么建议配置为 false
 
+```
+<escroll ref="escroll" event></escroll>
+```
 
 
 ### name
@@ -40,6 +43,10 @@ vue3 scroll 在 vue 中的使用
 
 说明：  组件命名
 
+```
+<escroll ref="escroll" name="escroll01"></escroll>
+```
+
 
 ### timeout
 
@@ -48,6 +55,10 @@ vue3 scroll 在 vue 中的使用
 默认值：3000
 
 说明：  scrolllower 以及 scrollupper 事件的超时时间
+
+```
+<escroll ref="escroll" :timeout="3000"></escroll>
+```
 
 
 ### lowerThreshold
@@ -58,6 +69,10 @@ vue3 scroll 在 vue 中的使用
 
 说明：  滚动条在距离底部指定距离时将触发 scrolllower 事件
 
+```
+<escroll ref="escroll" :lowerThreshold="70"></escroll>
+```
+
 
 ### upperThreshold
 
@@ -66,6 +81,10 @@ vue3 scroll 在 vue 中的使用
 默认值：10
 
 说明：  滚动条在距离顶部指定距离时将触发 scrollupper 事件
+
+```
+<escroll ref="escroll" :upperThreshold="10"></escroll>
+```
 
 
 ### top
@@ -76,6 +95,10 @@ vue3 scroll 在 vue 中的使用
 
 说明：  滚动位置大于指定位置时，将会显示返回顶部按钮
 
+```
+<escroll ref="escroll" :top="0"></escroll>
+```
+
 
 ### scrollBehavior
 
@@ -84,6 +107,10 @@ vue3 scroll 在 vue 中的使用
 默认值：false
 
 说明：  是否要记住每一次的滚动位置，在组件被恢复时自动回到上一次的滚动位置
+
+```
+<escroll ref="escroll" scrollBehavior></escroll>
+```
 
 
 ### direction
@@ -94,6 +121,10 @@ vue3 scroll 在 vue 中的使用
 
 说明：  限制滚动方向，接受传值 “vertical” 以及 “horizontal”
 
+```
+<escroll ref="escroll" direction="vertical"></escroll>
+```
+
 
 ### horizontal
 
@@ -102,6 +133,10 @@ vue3 scroll 在 vue 中的使用
 默认值：undefined
 
 说明：  是否允许横向滚动
+
+```
+<escroll ref="escroll" horizontal></escroll>
+```
 
 
 ### vertical
@@ -112,6 +147,10 @@ vue3 scroll 在 vue 中的使用
 
 说明：  是否允许竖向滚动，传入 true 或 undefined 时都是启用
 
+```
+<escroll ref="escroll" vertical></escroll>
+```
+
 
 ### size
 
@@ -120,6 +159,10 @@ vue3 scroll 在 vue 中的使用
 默认值：mini
 
 说明：  滚动条尺寸，接受传值 “mini” “none” “small” 以及 “medium”
+
+```
+<escroll ref="escroll" size="mini"></escroll>
+```
 
 
 
