@@ -85,6 +85,7 @@
                     let y = parseFloat(sessionStorage.getItem(data.name + '-y')) || 0;
                     let x = parseFloat(sessionStorage.getItem(data.name + '-x')) || 0;
                     options.isNormalcy = false
+                    context.emit('scrollrecovery', data, 'scrollrecovery')
                     scrollTo({top: y, left: x})
                 }
             })
