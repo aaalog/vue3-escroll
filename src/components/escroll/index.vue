@@ -48,7 +48,7 @@
                 escroll.value.addEventListener('scroll', function(e) {
                     let target = e.srcElement ? e.srcElement : e.target
                     options.scrollTop = target.scrollTop
-                    if (!props.event || option.ticking) { return null } // 停止滚动事件监听
+                    if (!props.event || option.ticking || target !== escroll.value) { return null } // 停止滚动事件监听
                     clearTimeout(option.timerScrollstop)
                     option.ticking = true
                     requestAnimationFrame(function(){ /*rAF 触发锁*/
